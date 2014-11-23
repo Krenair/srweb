@@ -45,7 +45,7 @@ the other pin on the same connector.</div>
 Indicators
 ----------
 
-|   LED           | Meaning                         | Inital power-up state
+|   LED           | Meaning                         | Initial power-up state
 |-----------------|---------------------------------|----------------------
 | PWR\|FLAT       | Green when powered, orange when the battery is low | Green
 | 5V              | Green when 5V is being supplied | Green

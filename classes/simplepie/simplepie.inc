@@ -7418,7 +7418,7 @@ class SimplePie_HTTP_Parser
 	protected $data = '';
 
 	/**
-	 * Input data length (to avoid calling strlen() everytime this is needed)
+	 * Input data length (to avoid calling strlen() every time this is needed)
 	 *
 	 * @var int
 	 */

@@ -19,7 +19,7 @@ If for whatever reason the board does not seem to be working pressing the reset 
 
 ## Indicators
 
-| LED       | Meaning                           | Inital power-up state
+| LED       | Meaning                           | Initial power-up state
 |-----------|-----------------------------------|----------------------
 | Power     | The board is powered              | On
 | Data      | The board is transferring data    | Flashing

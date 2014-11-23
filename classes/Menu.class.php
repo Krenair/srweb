@@ -23,7 +23,7 @@ class Menu {
 
 	/*
 	 * Returns a string containing the un-ordered list of the menu.
-	 * Ensure menu is populated first (addToHierachy(...)).
+	 * Ensure menu is populated first (addToHierarchy(...)).
 	 */
 	function getMenuHTML(){
 
@@ -45,13 +45,13 @@ class Menu {
 
 
 	/*
-	 * Adds a path (such as 'dir/file') to the hierachy. $path is
+	 * Adds a path (such as 'dir/file') to the hierarchy. $path is
 	 * the path to the file, relative to the content dir, and
 	 * excluding any extension. $root_uri is the URI that would be
 	 * used to access the directory containing index.php. $text is
 	 * is the text you wish to be displayed on the page.
 	 */
-	function addToHierachy($path, $root_uri, $text=""){
+	function addToHierarchy($path, $root_uri, $text=""){
 
 		//get all parts of the path (e.g. 'dir/dir2/file' => array(dir, dir2, file))
 		preg_match_all( '/([a-zA-Z0-9\-\._\ ]+)\/?/', $path, $matches);
@@ -79,7 +79,7 @@ class Menu {
 
 		}//foreach
 
-	}//addToHierachy
+	}//addToHierarchy
 
 }//class
 

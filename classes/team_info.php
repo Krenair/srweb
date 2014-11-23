@@ -25,7 +25,7 @@ class LiveStatusItem extends stdClass
  */
 function get_team_list($file_path = False) {
 	$teams = glob(TEAM_STATUS_DIR."/*-status.json");
-	// gaurd against there being no teams.
+	// guard against there being no teams.
 	if (empty($teams))
 		return array();
 	$team_ids = array_map(function($t) {

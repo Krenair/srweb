@@ -1,9 +1,9 @@
 <?php
 
 /*
- * A class to represent a node in a menu hierachy. One MenuItem
+ * A class to represent a node in a menu hierarchy. One MenuItem
  * instance has an array (which can be empty) of MenuItems below
- * it in the hierachy -- i.e. representing the tree.
+ * it in the hierarchy -- i.e. representing the tree.
  */
 class MenuItem {
 
@@ -30,8 +30,8 @@ class MenuItem {
 
 
 	/*
-	 * Returns a string representing the menu hierachy at and
-	 * below the current item. The hierachy is produced 
+	 * Returns a string representing the menu hierarchy at and
+	 * below the current item. The hierarchy is produced
 	 * recursively, with MenuItems represented with ULs in 
 	 * the LIs of ULs.
 	 */

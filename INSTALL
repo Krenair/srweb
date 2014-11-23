@@ -23,7 +23,7 @@ https://www.studentrobotics.org/trac/wiki/ApacheInstallGuide
 	+ `chown $APACHEU:$APACHEG templates_compiled/` (where $APACHEU
 	  and $APACHEG are the Apache user and Apache group, respectively)
 	+ `setfacl -m u:$APACHEU:rwx templates_compiled/` to allow r/w/x
-	  access to the apache user aswell as the owner.
+	  access to the apache user as well as the owner.
 	  The `install.sh` script provided can perform this option for you.
 	+ You could also chmod, but depending on the dir's location, that
           may not be the best way.

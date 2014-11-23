@@ -57,7 +57,7 @@ Rules:
 
      + Don't use any style attributes in anything
 
-     + Use a semantic markup (by that I mean use a hierachical layout)
+     + Use a semantic markup (by that I mean use a hierarchical layout)
 
 4. If you have to style your elements:
 
@@ -92,7 +92,7 @@ div#bees_bob table {
 
 The first thing to note is the header at the top of the file. The text after 
 '//TITLE:' will appear in the page's <title> tag. The DESCRIPTION will 
-appear in the relevent <meta> tag, and the same applies for KEYWORDS. The 
+appear in the relevant <meta> tag, and the same applies for KEYWORDS. The
 CONTENT_TYPE specifies how the file will be parsed. The Currently supported 
 formats are as follows:
 
@@ -100,7 +100,7 @@ formats are as follows:
   * 'md'       --> shorthand for MarkDown
   * 'html'     --> HTML source
 
-The prefered method of content production is MarkDown (you may have guessed) 
+The preferred method of content production is MarkDown (you may have guessed)
 and HTML should be used in exceptional circumstances. It is important to 
 note, though, that HTML tags can appear in MarkDown. For example:
 
@@ -148,7 +148,7 @@ and it is what pages are based upon. For the page to exist in another
 language, it must first exist in the default language. If an ISO
 standard language is set in the browser at a higher level of
 preference than the default, and the requested page exists in the
-more-prefered language, then that page will be served in the
+more-preferred language, then that page will be served in the
 more-preferred language, and only when the correct mapping is set up
 in 'config.inc.php'.
 

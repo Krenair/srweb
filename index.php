@@ -8,7 +8,7 @@ require('config.inc.php');
 //get smarty code
 require(SMARTY_DIR . '/Smarty.class.php');
 
-//get classes for constructing hierachical menu
+//get classes for constructing hierarchical menu
 require('classes/MenuItem.class.php');
 require('classes/Menu.class.php');
 
@@ -35,7 +35,7 @@ $smarty->addPluginsDir( "plugins" );
 //get the page to serve (excl. language)
 $page = getPage();
 
-//get the prefered languages
+//get the preferred languages
 $orderedLanguages = getOrderedLanguages();
 
 //default language is en -- English
@@ -70,7 +70,7 @@ if ($page == 'home'){
 		}
 	}
 
-	$smarty->assign('side_menu', constructMenuHierachy());
+	$smarty->assign('side_menu', constructMenuHierarchy());
 	$smarty->assign('root_uri', ROOT_URI);
 	$smarty->assign('base_uri', BASE_URI);
 	$smarty->display($file . '.tpl');
@@ -251,7 +251,7 @@ if ($page == 'home'){
  */
 
 /*
- * Returns an ordered array (most prefered first) of languages
+ * Returns an ordered array (most preferred first) of languages
  * the client is happy with. If it's not set, then 'en' is the
  * default.
  *
@@ -422,7 +422,7 @@ function getPage(){
  * and to pass to the makemenu plugin (function.makemenu.php)
  * in the plugins/ dir. (For producing a ul/li-based menu).
  */
-function constructMenuHierachy(){
+function constructMenuHierarchy(){
 
 	global $MENU_PAGES;
 	$allowed_pages = getAllowedPages(CONTENT_DIR . '/default');
@@ -432,15 +432,15 @@ function constructMenuHierachy(){
 	//ignore any menu page that doesn't exist
 	$menu_pages = array_intersect($MENU_PAGES, $allowed_pages);
 
-	//add each to the hierachy
+	//add each to the hierarchy
 	foreach (array_keys($menu_pages) as $index){
 
 		$path = $menu_pages[$index];
 
 		if (gettype($index) == 'string'){
-			$menu->addToHierachy($path, ROOT_URI, $index);
+			$menu->addToHierarchy($path, ROOT_URI, $index);
 		} else {
-			$menu->addToHierachy($path, ROOT_URI);
+			$menu->addToHierarchy($path, ROOT_URI);
 		}
 
 	}
@@ -464,7 +464,7 @@ function constructDocsNavHierarchy(){
 
 		$text = explode('/', $item);
 		$text = $text[count($text)-1];
-		$menu->addToHierachy($item, ROOT_URI, str_replace('_', ' ', $text));
+		$menu->addToHierarchy($item, ROOT_URI, str_replace('_', ' ', $text));
 	}
 
 	return $menu;
